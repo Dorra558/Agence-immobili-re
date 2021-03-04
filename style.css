@@ -9,15 +9,17 @@
 body {
     background-color: #f3f2f2;
 }
-.logooo{
-    color: black;
+
+.logooo {
+    color: rgb(235, 10, 10);
     font-size: 35px;
-    background-color: rgb(235, 10, 10);
 }
-.logoo{
+
+.logoo {
     color: white;
     font-weight: bold;
 }
+
 .nav {
     height: 65px;
     width: 100%;
@@ -39,7 +41,6 @@ body {
     font-family: 'Anton', sans-serif;
 }
 
-
 .nav>.nav-btn {
     display: none;
 }
@@ -55,11 +56,27 @@ body {
     padding: 13px 10px 13px 10px;
     text-decoration: none;
     color: #efefef;
+    position: relative;
 }
 
-.nav>.nav-links>a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+.nav>.nav-links>a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: rgb(235, 10, 10);
+    position: absolute;
+    bottom: 13px;
+    transition: 0.5s;
 }
+
+.nav>.nav-links>a:hover::after {
+    width: 100%;
+}
+
+
+/* .nav>.nav-links>a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+} */
 
 .nav>#nav-check {
     display: none;
@@ -151,7 +168,6 @@ body {
     padding: 12px;
     border: 1px solid rgb(235, 10, 10);
     font-size: 20px;
-    
     -webkit-appearance: button;
     appearance: button;
     outline: none;
@@ -436,18 +452,22 @@ button:hover {
 .quick-links li:hover a i {
     font-weight: 700;
 }
-.copy{
+
+.copy {
     background-color: rgb(37, 36, 36);
     color: white;
 }
-.copyrt{
+
+.copyrt {
     display: flex;
     justify-content: center;
     padding: 10px;
 }
-.copyrt i{
+
+.copyrt i {
     margin-right: 6px;
 }
+
 
 /* ***********************************************************Page Acheter.html********************************************************************** */
 
@@ -486,37 +506,51 @@ button:hover {
     color: rgb(235, 10, 10);
     font-weight: bold;
 }
+
+
 /* **********section images*************** */
-.conteneur1{
+
+.conteneur1 {
     display: flex;
     justify-content: space-around;
 }
 
-.img2{
+.img2 {
     width: 25rem;
     border-radius: 8px;
 }
-.textcard{
+
+.textcard {
     background-color: white;
     height: 10rem;
 }
 
 
 /***************************Page Contact ********************************************/
-.map{
+
+.map {
     margin-top: 30px;
     padding-top: auto;
 }
 
+
 /* ****formulaire contact*** */
-.contactForm{
-    background-color:  rgb(37, 36, 36);
+
+.contactForm {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./imgs/contact.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* background-color: rgb(37, 36, 36); */
     padding: 20px;
 }
-#for{
+
+#for {
     color: rgb(235, 10, 10);
     font-size: 20px;
 }
+
 .for {
     margin-top: 50px;
     transition: all 4s ease-in-out;
@@ -538,7 +572,7 @@ button:hover {
 }
 
 #for .submit {
-    background-color: rgb(138, 135, 135) ;
+    background-color: rgb(138, 135, 135);
     border-color: transparent;
     color: rgb(235, 10, 10);
     font-size: 20px;
@@ -550,7 +584,7 @@ button:hover {
 }
 
 #for .submit:hover {
-    background-color:rgb(235, 10, 10);
+    background-color: rgb(235, 10, 10);
     opacity: 0.5;
     cursor: pointer;
     color: white;
@@ -559,9 +593,9 @@ button:hover {
 .forms {
     margin-left: 30px;
 }
+
+
 /* end form */
-
-
 
 input::-webkit-input-placeholder {
     color: rgb(138, 135, 135) !important;
@@ -573,5 +607,20 @@ textarea::-webkit-input-placeholder {
     font-size: 15px;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 30px;
+    justify-content: center;
+}
 
+.item5 img {
+    width: 380px;
+    height: 280px;
+}
 
+.grid-text {
+    position: absolute;
+    z-index: 2;
+    top: 85rem;
+}
