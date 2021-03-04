@@ -1,273 +1,467 @@
 /* navbar */
 
-*{
-  margin: 0px;
-  overflow-x: hidden;
-  font-family: 'Balsamiq Sans', cursive;
+* {
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: 'Balsamiq Sans', cursive;
 }
-body{
-  background-color: #f3f2f2;
+
+body {
+    background-color: #f3f2f2;
 }
 
 .nav {
-  height: 65px;
-  width: 100%;
-  background-color: #4d4d4da2;
-  position: fixed;
-  padding-top: 10px;
-  z-index: 2;
-  
+    height: 65px;
+    width: 100%;
+    background-color: #4d4d4da2;
+    position: fixed;
+    padding-top: 10px;
+    z-index: 2;
 }
 
-.nav > .nav-header {
-  display: inline;
+.nav>.nav-header {
+    display: inline;
 }
 
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px;
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px;
 }
 
-.nav > .nav-btn {
-  display: none;
+.nav>.nav-btn {
+    display: none;
 }
 
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
+.nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
 }
 
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
-  text-decoration: none;
-  color: #efefef;
+.nav>.nav-links>a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
 }
 
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+.nav>.nav-links>a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav > #nav-check {
-  display: none;
+.nav>#nav-check {
+    display: none;
 }
 
 @media (max-width:600px) {
-  .nav > .nav-btn {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-  }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
-    position: absolute;
-    display: block;
-    width: 100%;
-    background-color: #333;
-    height: 0px;
-    transition: all 0.3s ease-in;
-    overflow-y: hidden;
-    top: 50px;
-    left: 0px;
-  }
-  .nav > .nav-links > a {
-    display: block;
-    width: 100%;
-  }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
-    height: 0px;
-  }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
-  }
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
 }
+
+
 /***end navbar****/
 
+
 /****** section1 *****/
-.back{
-  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('./imgs/backk.jpg'); background-repeat: no-repeat;
-   background-size: cover; 
-   background-position: center center; 
-   padding: 0%;
-   height: 25rem;
-   padding: 7rem;
-}
-.proverbe{
-  display: grid;
- align-content: center;
- justify-content: center;
- height: 25rem;
 
-
+.back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://preview.free3d.com/img/2019/10/2169029091745858762/0pgthsmb-900.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 0%;
+    height: 25rem;
+    padding: 7rem;
 }
 
-.proverbe > p{
-  color: white;
-  font-size: 27px;
-  font-weight: bold;
-  text-align: center;
+.proverbe {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 25rem;
 }
+
+.proverbe>p {
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+}
+
 
 /* *****formulaire******* */
-.box{
-  background-color: #0563af;
-  color: white;
-  padding: 12px;
- 
-  border: none;
-  font-size: 20px;
-  box-shadow: 0 2px 15px rgba(240, 235, 235, 0.418);
-  -webkit-appearance: button;
-  appearance: button;
-  outline: none;
+
+.box {
+    background-color: #0563af;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 20px;
+    box-shadow: 0 2px 15px rgba(240, 235, 235, 0.418);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
 }
 
-.box option{
-  padding: 40px;
+.box option {
+    padding: 40px;
 }
-button:hover{
-cursor: pointer;
+
+button:hover {
+    cursor: pointer;
 }
 
 
 /* ******section2******** */
-.container h1{
-  text-align: center;
+
+.container h1 {
+    text-align: center;
 }
 
-
 .container1 {
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .card {
-  width: 280px;
-  height: 360px;
-  border-radius: 15px;
-  padding: 1.5rem;
-  background: white;
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  transition: 0.4s ease-out;
-  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    height: 360px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
 }
 
 .card:hover:before {
-  opacity: 1;
+    opacity: 1;
 }
-.card:hover .info {
-  opacity: 1;
 
+.card:hover .info {
+    opacity: 1;
 }
+
 .card:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.6);
-  z-index: 2;
-  transition: 0.5s;
-  opacity: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
 }
+
 .card img {
-  width: 100%;
-  height: 100%;
-  /* -o-object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* -o-object-fit: cover;
      object-fit: cover; */
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
 }
+
 .card .info {
-  position: relative;
-  z-index: 3;
-  color: white;
-  opacity: 0;
-  transition: 0.5s;
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transition: 0.5s;
 }
+
 .card .info h1 {
-  margin: 0px;
+    margin: 0px;
 }
+
 .card .info p {
-  letter-spacing: 1px;
-  font-size: 15px;
-  margin-top: 8px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
 }
+
 .card .info button {
-  padding: 0.6rem;
-  outline: none;
-  border: none;
-  border-radius: 3px;
-  background: white;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.4s ease;
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease;
 }
+
 .card .info button:hover {
-  background: dodgerblue;
-  color: white;
+    background: dodgerblue;
+    color: white;
 }
-.bouton{
- border-radius: 60px;
- border: none;
- color: white;
- width: 25%;
- padding: 16px 32px;
- /* text-align: center; */
- /* display: inline-block; */
- font-size: 20px;
- /* margin: 4px 2px; */
- /* transition-duration: 0.4s; */
- cursor: pointer;
+
+.bouton {
+    border-radius: 60px;
+    border: none;
+    color: white;
+    width: 25%;
+    padding: 16px 32px;
+    /* text-align: center; */
+    /* display: inline-block; */
+    font-size: 20px;
+    /* margin: 4px 2px; */
+    /* transition-duration: 0.4s; */
+    cursor: pointer;
 }
-.btn{
-  background-color: white; 
-  color: black; 
-  border: 2px solid #008CBA;
+
+.btn {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
 }
 
 .btn:hover {
-  background-color: #008CBA;
-  color: white;
-}
-.btnn{
-  display: flex;
-  justify-content: center;
+    background-color: #008CBA;
+    color: white;
 }
 
-/* *****section3****** */
-.service{
-  text-align: center;
+.btnn {
+    display: flex;
+    justify-content: center;
 }
-.contain{
-  display: flex;
-  justify-content: space-around;
+
+
+/***************************section3*******************************************/
+
+.backg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./imgs/fixedd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.icon {
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 50px;
+    border-radius: 50%;
+    color: teal;
+    font-weight: bold;
+}
+
+.contain1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.titlicon {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.percent {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+
+/* *****section4****** */
+
+.service {
+    text-align: center;
+}
+
+.contain {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+
+.visio {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.serv1 {
+    width: 35rem;
+    margin: 30px;
+}
+
+.serv2 {
+    width: 35rem;
+    margin: 30px;
+    height: 20rem;
+}
+
+.parag {
+    margin: 30px;
+    margin-top: 100px;
+    line-height: 27px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+
+/* **********Footer************** */
+
+.container3 {
+    display: flex;
+    background-color: rgb(37, 36, 36);
+    justify-content: space-between;
+    color: white;
+    padding: 40px;
+}
+
+.container3 h3 {
+    color: rgb(109, 109, 17);
+    font-size: 23px;
+}
+
+.textfoot {
+    line-height: 30px;
+}
+
+.reseau {
+    display: flex;
+    justify-content: space-around;
+}
+
+.reseau i {
+    color: black;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.face:hover {
+    color: #4267B2;
+}
+
+.linked:hover {
+    color: #0077B5;
+}
+
+.insta:hover {
+    color: #C13584;
+}
+
+.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+.quick-links li a {
+    text-decoration: none;
+    color: white;
+    line-height: 32px;
+}
+
+.quick-links li a i {
+    margin-right: 5px;
+}
+
+.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+
+/* ***********************************************************Page Acheter.html********************************************************************** */
+
+.conteneur {
+    background-color: rgba(182, 155, 155, 0.63);
+    padding: 30px;
+    margin: 25px;
+}
+
+.conteneur p {
+    line-height: 33px;
+}
+
+.conteneuur {
+    display: flex;
+    justify-content: space-around;
+}
+
+.conteneuur p {
+    text-align: center;
+}
+
+.item1 i {
+    display: flex;
+    justify-content: center;
+}
+
+.item1 {
+    border: 2px solid rgb(231, 75, 75);
+    padding: 40px;
+    background-color: #fff;
+}
+
+.item1 p {
+    font-size: 16px;
+    color: rgb(235, 10, 10);
+    font-weight: bold;
 }
