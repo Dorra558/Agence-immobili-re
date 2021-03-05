@@ -65,8 +65,9 @@ body {
     width: 0;
     background-color: rgb(235, 10, 10);
     position: absolute;
-    bottom: 13px;
+    bottom: 5px;
     transition: 0.5s;
+    left:0;
 }
 
 .nav>.nav-links>a:hover::after {
@@ -175,6 +176,13 @@ body {
 
 .box option {
     padding: 40px;
+}
+#bttn{
+    background-color: rgb(235, 10, 10);
+    color: white;
+}
+#bttn:hover{
+  opacity: 0.5;
 }
 
 button:hover {
@@ -361,17 +369,22 @@ button:hover {
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+    color: rgb(235, 10, 10)
 }
 
 .serv1 {
     width: 35rem;
     margin: 30px;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .serv2 {
     width: 35rem;
     margin: 30px;
     height: 20rem;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .parag {
@@ -380,6 +393,8 @@ button:hover {
     line-height: 27px;
     background-color: #fff;
     padding: 15px;
+    border-radius: 15px;
+    border: 1px solid  rgb(235, 10, 10);
 }
 
 
@@ -607,11 +622,13 @@ textarea::-webkit-input-placeholder {
     font-size: 15px;
 }
 
+/******************grid card*****************/
 .grid {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-column-gap: 30px;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .item5 img {
@@ -620,7 +637,31 @@ textarea::-webkit-input-placeholder {
 }
 
 .grid-text {
+    background-color: #efefef91;
     position: absolute;
     z-index: 2;
-    top: 85rem;
+    top: 82.5rem;
+    padding: 10px;
+}
+.grid-text p{
+   color: rgb(34, 34, 34);
+   font-size: 18px;
+}
+.grid-text h3{
+   color: #CF3F20;
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+
+.star{
+    display: none;
+    position: absolute;
+    z-index: 3;
+    top: 72.5rem; 
+    left: 22.5rem;
+    color: #CF3F20;
+}
+
+.item5:hover .star{
+display: block;
 }
